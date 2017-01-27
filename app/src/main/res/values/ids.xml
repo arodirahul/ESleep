@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="Welcometext">false</item>
+    <item type="id" name="ButtonConnect">false</item>
+    <item type="id" name="ButtonDisconnect">false</item>
+    <item type="id" name="labelBatteryCharge">false</item>
+    <item type="id" name="BChargeTextBox">false</item>
+    <item type="id" name="labelHeartRate">false</item>
+    <item type="id" name="HRTextBox">false</item>
+    <item type="id" name="InstantSpeed">false</item>
+    <item type="id" name="labelInstantSpeed">false</item>
+    <item type="id" name="labelAvgRRInterval">false</item>
+    <item type="id" name="AvgRRInterval">false</item>
+    <item type="id" name="StatusTextBox">false</item>
+    <item type="id" name="labelStatusMsg">false</item>
+    <item type="id" name="labelStartLogging">false</item>
+    <item type="id" name="StartLogging">false</item>
+    <item type="id" name="labelAnalysing">false</item>
+    <item type="id" name="StartAnalysing">false</item>
+    <item type="id" name="SettingView">123</item>
+</resources>

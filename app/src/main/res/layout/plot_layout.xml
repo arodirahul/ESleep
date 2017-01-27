@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:id="@+id/graph" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:layout_marginTop="325dp"
+            android:layout_weight="1"
+            android:textOff="Start Real Time Plot"
+            android:textOn="Stop Real Time Plot"
+            android:onClick = "toggleclick"/>
+
+
+        <Button
+            android:text="Analyze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginTop="325dp"
+            android:onClick="analyze"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <Button
+        android:text="Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginTop="375dp"
+        android:onClick="toSetting" />
+    <Button
+        android:text="Main UI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_marginTop="425dp"
+        android:onClick="toMainUI" />
+
+</RelativeLayout>

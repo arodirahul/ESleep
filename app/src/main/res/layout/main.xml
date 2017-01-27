@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/Welcometext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <Button
+        android:id="@id/ButtonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_below="@id/Welcometext" />
+
+    <Button
+        android:id="@id/ButtonDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:layout_toRightOf="@id/ButtonConnect"
+        android:layout_alignTop="@id/ButtonConnect" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/BChargeTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery Charge"
+        android:layout_below="@id/ButtonConnect" />
+
+    <EditText
+        android:id="@id/labelBatteryCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:layout_below="@id/ButtonConnect"
+        android:layout_alignParentRight="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/HRTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate"
+        android:layout_below="@id/labelBatteryCharge" />
+
+    <EditText
+        android:id="@id/labelHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:layout_below="@id/labelBatteryCharge"
+        android:layout_alignParentRight="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/InstantSpeed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Instant Speed"
+        android:layout_below="@id/labelHeartRate" />
+
+    <EditText
+        android:id="@id/labelInstantSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:layout_below="@id/labelHeartRate"
+        android:layout_alignParentRight="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/AvgRRInterval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Avg R-R Interval"
+        android:layout_below="@id/labelInstantSpeed" />
+
+    <EditText
+        android:id="@id/labelAvgRRInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:layout_below="@id/labelInstantSpeed"
+        android:layout_alignParentRight="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@id/StatusTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Message"
+        android:layout_below="@id/labelAvgRRInterval" />
+
+    <EditText
+        android:id="@id/labelStatusMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Message Box"
+        android:layout_below="@id/StatusTextBox"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Store Data"
+        android:id="@id/labelStartLogging"
+        android:layout_below="@id/labelStatusMsg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@id/StartLogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/labelStartLogging"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Analyze"
+        android:id="@id/labelAnalysing"
+        android:layout_below="@id/labelStatusMsg"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@id/StartAnalysing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plot"
+        android:layout_below="@id/labelStartLogging"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToPlot"/>
+<!--
+    <Button
+        android:text="Test Write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/labelStartLogging"
+        android:layout_alignEnd="@+id/labelStartLogging"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/button4"
+        android:onClick="TestWrite"/>
+-->
+</RelativeLayout>
